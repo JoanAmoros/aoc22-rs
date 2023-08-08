@@ -3,6 +3,7 @@ use std::path::PathBuf;
 
 mod day1;
 mod day2;
+mod day3;
 
 pub fn read_input_file(day: u8) -> String {
     let mut path = PathBuf::from(std::env!("CARGO_MANIFEST_DIR"));
