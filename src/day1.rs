@@ -1,13 +1,5 @@
-use std::fs;
-use std::path::PathBuf;
-
 fn calories() -> Vec<u32> {
-    let mut path = PathBuf::from(std::env!("CARGO_MANIFEST_DIR"));
-
-    path.push("inputs/adventofcode.com_2022_day_1_input.txt");
-
-    let file = fs::read_to_string(path)
-        .expect("Failed to read input file");
+    let file = crate::read_input_file(1);
 
     let mut calories = Vec::<u32>::new();
     let mut acc = 0u32;
