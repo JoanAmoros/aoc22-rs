@@ -13,3 +13,8 @@ pub fn read_input_file(day: u8) -> String {
     fs::read_to_string(path)
         .expect("Failed to read input file")
 }
+
+fn main() {
+    let answer = day3::question2();
+    println!("The answer is: {}", answer);
+}

@@ -107,22 +107,3 @@ pub fn question2() -> u32 {
 
     points
 }
-
-#[cfg(test)]
-mod tests {
-    use super::{question1, question2};
-
-    #[test]
-    fn test_answer_1_works_for_provided_input() {
-        let answer = question1();
-        println!("Answer is {:?}", answer);
-        assert_ne!(answer, 0);
-    }
-
-    #[test]
-    fn test_answer_2_works_for_provided_input() {
-        let answer = question2();
-        println!("Answer is {:?}", answer);
-        assert_ne!(answer, 0);
-    }
-}

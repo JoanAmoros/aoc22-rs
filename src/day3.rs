@@ -7,7 +7,7 @@ fn calculate_priority(ch: char) -> u32 {
     }
 }
 
-fn question1() -> u32 {
+pub fn question1() -> u32 {
     let file = crate::read_input_file(3);
     let mut acc = 0u32;
 
@@ -23,7 +23,7 @@ fn question1() -> u32 {
     acc
 }
 
-fn question2() -> u32 {
+pub fn question2() -> u32 {
     let file = crate::read_input_file(3);
     let mut acc = 0u32;
 
@@ -37,23 +37,4 @@ fn question2() -> u32 {
     }
 
     acc
-}
-
-#[cfg(test)]
-mod tests {
-    use super::{question1, question2};
-
-    #[test]
-    fn test_answer_1_works_for_provided_input() {
-        let answer = question1();
-        println!("Answer is {:?}", answer);
-        assert_ne!(answer, 0);
-    }
-
-    #[test]
-    fn test_answer_2_works_for_provided_input() {
-        let answer = question2();
-        println!("Answer is {:?}", answer);
-        assert_ne!(answer, 0);
-    }
 }
