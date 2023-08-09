@@ -1,8 +1,7 @@
 use std::fs;
 use std::path::PathBuf;
 
-mod day4;
-
+mod day5;
 pub fn read_input_file(day: u8) -> String {
     let mut path = PathBuf::from(std::env!("CARGO_MANIFEST_DIR"));
 
@@ -13,6 +12,6 @@ pub fn read_input_file(day: u8) -> String {
 }
 
 fn main() {
-    let answer = day4::question2();
+    let answer = day5::question2();
     println!("The answer is: {}", answer);
 }
